@@ -1,0 +1,289 @@
+/* Common styles for body, headings, links, and lists */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Replace with your preferred font */
+  background-color: #f0f0f0; /* Background color for the entire page */
+  color: #333; /* Default text color */
+  line-height: 1.6; /* Improved readability */
+}
+
+/* Header, Navbar, and Footer */
+header, nav, footer {
+  background-color: #333; /* Dark background color for the header, navbar, and footer */
+  color: #fff; /* Text color for header, navbar, and footer items */
+  padding: 3px 0;
+  text-align: center;
+}
+
+header a, nav a, footer a {
+  text-decoration: none;
+  color: #fff; /* Text color for header, navbar, and footer links */
+  font-weight: bold;
+  margin: 0 15px; /* Spacing between header, navbar, and footer links */
+}
+
+/* Navbar site title and slogan */
+.site-title {
+  margin: 10px 0;
+  order: 1; /* Set the site title to appear first */
+  text-align: left; /* Align the text to the left */
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-title h1 {
+  font-size: 2.5rem;
+  color: #e85e2c; /* Accent color for site title */
+  margin-bottom: 5px; /* Add margin for separation */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* 3D text shadow effect */
+}
+
+.site-text {
+  color: #9fb1bc; /* Text color for additional text */
+  font-size: 1rem;
+  margin-bottom: 20px; /* Add margin for separation */
+}
+
+/* Navbar styles */
+nav ul {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  list-style-type: none;
+  display: flex;
+  order: 2; /* Set the navbar to appear second */
+  justify-content: flex-end; /* Align the navbar to the right */
+  align-items: center;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+/* Footer styles */
+/* footer p { */
+  /* margin: 0; */
+  /* color: #ccc; Text color for footer copyright text */
+/* } */
+
+/* Style the footer container */
+footer {
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Text color for the footer */
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Create a flex container for the content */
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Distribute content evenly horizontally */
+  align-items: center; /* Center content vertically */
+  max-width: 800px; /* Adjust to your preferred content width */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Style social media icons */
+.social-icon {
+  justify-content: flex-end;
+  font-size: 24px; /* Adjust the icon size */
+  color: #0073e6; /* Set the icon color */
+  margin-right: 10px; /* Adjust spacing between icons */
+  text-decoration: none; /* Remove underlines from links */
+}
+
+/* Style copyright text */
+.copyright {
+  text-align: left;
+  font-size: 20px; /* Adjust the text size */
+}
+
+
+
+/* index file */
+
+/* Blog content styles */
+.blogs {
+  max-width: 900px; /* Adjust to your content width */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* Background color for the content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for content */
+}
+
+.blogs h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Blog post link styles */
+.single {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f9f9f9; /* Background color for blog posts */
+  text-decoration: none;
+  color: #333; /* Text color for blog post titles */
+}
+
+.single:hover {
+  background-color: #eee; /* Background color on hover */
+}
+
+.single .title {
+  font-size: 1.5rem;
+}
+
+.single .snippet {
+  margin-top: 10px;
+  color: #777; /* Text color for blog post snippets */
+}
+
+
+/* about page */
+.abouthead{
+  text-align: center;
+}
+
+
+/* About page-specific styles */
+.about {
+  max-width: 900px; /* Adjust to your content width */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff; /* Background color for the content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for content */
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333; /* Text color for headings */
+}
+
+.about p {
+  margin-bottom: 20px;
+  color: #444; /* Text color for paragraphs */
+}
+
+/* Adjust styles as needed to match your preferred design for the "About" page content */
+
+
+/* DETAILS PAGE */
+/* Blog details page-specific styles */
+.details {
+  max-width: 900px; /* Adjust to your content width */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff; /* Background color for the content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for content */
+}
+
+.details h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333; /* Text color for headings */
+}
+
+.details .content p {
+  margin-bottom: 20px;
+  color: #444; /* Text color for paragraphs */
+}
+
+.details .content .delete {
+  display: inline-block;
+  background-color: crimson; /* Background color for the delete button */
+  color: #fff; /* Text color for the delete button */
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.details .content .delete img {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.details .content .delete:hover {
+  background-color: #ff5722; /* Background color on hover */
+}
+
+/* Adjust styles as needed to match your preferred design for the blog details page content */
+
+/* CREATE BLOG PAGE */
+/* Create Blog page-specific styles */
+.create-blog {
+  max-width: 900px; /* Adjust to your content width */ 
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff; /* Background color for the content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for content */
+}
+
+.create-blog h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333; /* Text color for headings */
+}
+
+.create-blog form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333; /* Text color for labels */
+}
+
+.create-blog form input[type="text"],
+.create-blog form textarea {
+  height: 12%;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Border for input fields */
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.create-blog form button {
+  background-color: #333; /* Background color for the submit button */
+  color: #fff; /* Text color for the submit button */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.create-blog form button:hover {
+  background-color: #ff5722; /* Background color on hover */
+}
+
+/* Adjust styles as needed to match your preferred design for the "Create Blog" page content */
+
+/* ERROR PAGE */
+/* 404 error page-specific styles */
+.not-found {
+  max-width: 900px; /* Adjust to your content width */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff; /* Background color for the content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for content */
+  text-align: center;
+  font-size: 2rem;
+  color: #333; /* Text color for the error message */
+}
+
+.not-found p {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #777; /* Text color for additional information */
+}
+
+/* Adjust styles as needed to match your preferred design for the 404 error page */

@@ -14,7 +14,7 @@ const blogRoutes = require('./routes/blogRoutes')
 //express app
 const app = express(); 
 
-//mongodb atlas user
+//mongodb atlas user api
 const dbURI = 'mongodb+srv://dp04:demo123@cluster0.ffdce1w.mongodb.net/LearnNode?retryWrites=true&w=majority';
 
 //METHOD PROVIDED BY MONGOOSE TO CONNECT TOO DATABASE 
